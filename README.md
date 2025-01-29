@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+# Real Estate App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern and user-friendly real estate mobile application built with **React Native** and **Appwrite**. This app allows users to browse, bookmark, and book properties seamlessly.
 
-## Get started
+## 🚀 Features
+- **User Authentication** (Sign Up, Login) using **Appwrite**
+- **Property Listings** (View properties with images, details, and pricing)
+- **Bookmark Properties** (Save favorite properties)
+- **Search & Filter** (Find properties based on location, price, and other criteria)
+- **Seamless UI** (Smooth navigation and modern UI design with NativeWind)
 
-1. Install dependencies
+## 🛠 Tech Stack
+- **Frontend:** React Native, TypeScript, NativeWind
+- **Backend & Database:** Appwrite
+- **State Management:** React Hooks & Context API
+- **Navigation:** Expo Router
+- **Image Handling:** Cloud storage via Appwrite
 
-   ```bash
-   npm install
-   ```
+## 📦 Installation & Setup
 
-2. Start the app
+### Prerequisites
+- Node.js & npm installed
+- Expo CLI installed (`npm install -g expo-cli`)
+- Appwrite instance set up
 
-   ```bash
-    npx expo start
-   ```
+### Steps to Run the Project
+```sh
+# Clone the repository
+git clone https://github.com/your-username/real-estate-app.git
+cd real-estate-app
 
-In the output, you'll find options to open the app in a
+# Install dependencies
+npm install
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# Set up environment variables (Appwrite project details)
+touch .env.local
+# Add your Appwrite credentials inside .env.local
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+# Start the development server
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📂 Folder Structure
+```
+real-estate-app/
+│-- src/
+│   ├── components/      # Reusable UI components
+│   ├── screens/         # App screens (Home, Details, Bookmarks, etc.)
+│   ├── navigation/      # App navigation setup
+│   ├── constants/       # Assets, icons, images
+│   ├── hooks/           # Custom React hooks
+│   ├── utils/           # Helper functions
+│-- app.json             # Expo configuration
+│-- .env.local           # Environment variables
+│-- package.json         # Dependencies & scripts
+```
 
-## Learn more
+## 🔗 API & Database Structure
+This app uses **Appwrite** for user authentication and database storage. The main collections are:
+- **users**: Stores user details
+- **properties**: Stores property listings with images, location, price, etc.
+- **bookmarks**: Stores user-specific bookmarked properties
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📌 Future Enhancements
+- **In-app Messaging** (Chat between buyers and sellers)
+- **Map Integration** (View properties on a map)
+- **Payment Gateway** (For secure property bookings)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+Happy Coding! 🚀
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
